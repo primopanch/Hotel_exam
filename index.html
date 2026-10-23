@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-panel">
+            <h1>Hotel California</h1>
+            <div class="enlaces">
+                <a href="index.html">Inicio</a>
+                <a href="contact.html">Contactanos</a>
+                <a href="about.html">Acerca de</a>
+            </div>
+        </div>
+    </header>
+    <h2>Bienvenido al hotel california</h2>
+    <p>El Hotel California es un lugar de descanso y relajacion, donde podras disfrutar de una experiencia unica en un ambiente acogedor y confortable. Nuestro objetivo es brindarte el mejor servicio y hacer que tu estancia sea inolvidable.</p>
+    <div class="room-card">
+        <img src="cuarto.jpg" alt="Habitacion">
+        <a href="rooms.html">Habitaciones</a>
+    </div>
+
+    
+	<form action="#" method="post">
+		<label for="correo">Correo electronico</label>
+		<input type="email" id="correo" name="correo" required>
+		<br>
+
+		<label for="nombre">Ingrese su nombre:</label>
+		<input type="text" id="nombre" name="nombre" required minlength="5" maxlength="15">
+		<br>
+
+		<label for="segundoApellido">Ingrese su segundo apellido:</label>
+		<input type="text" id="segundoApellido" name="segundoApellido" required minlength="5" maxlength="15">
+		<br>
+
+		<label for="telefono">Telefono</label>
+		<input type="text" id="telefono" name="telefono" pattern="[0-9]+" title="Solo numeros del 0 al 9">
+		<br>
+
+		Genero:
+		<label for="mujer">Mujer</label>
+		<input type="radio" id="mujer" name="genero" value="mujer">
+		<label for="hombre">Hombre</label>
+		<input type="radio" id="hombre" name="genero" value="hombre">
+		<br>
+
+		Preferencias:
+		<label for="pizza">Pizza</label>
+		<input type="checkbox" id="pizza" name="preferencias" value="pizza">
+		<label for="pozole">Pozole</label>
+		<input type="checkbox" id="pozole" name="preferencias" value="pozole">
+		<br>
+
+		<button type="submit">Guardar</button>
+		<button type="button">Hola</button>
+	</form>
+    <footer>
+        <p>&copy; 2026 Hotel California</p>
+    </footer>
+</body>
+
+</html>
